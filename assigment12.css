@@ -1,0 +1,79 @@
+body{
+    background-image: linear-gradient(to bottom left, var(--gradient-color-stops));
+    --gradient-from-color: #34393f;
+    --gradient-to-color: #191a1d;
+    --gradient-color-stops: var(--gradient-from-color), var(--gradient-to-color, rgba(52, 57, 63, 0));
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#container{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 260px;
+    padding: 20px;
+    border-radius: 0.5rem;
+    margin: auto;
+    margin-top: 10%;
+    box-shadow: -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+                0.25rem 0.25rem 0.5rem rgb(255 0 0 / 12%), 
+                -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+                0.75rem 0.75rem 1.75rem rgb(255 0 0 / 12%), 
+                inset 8rem 8rem 8rem rgb(0 0 0 / 5%), 
+                inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
+                
+}
+
+button{
+    box-shadow: -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+                0.25rem 0.25rem 0.5rem rgb(255 0 0 / 12%), 
+                -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+                0.75rem 0.75rem 1.75rem rgb(0 0 0 / 12%), 
+                inset 8rem 8rem 8rem rgb(0 0 0 / 5%), 
+                inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
+                
+    color: #fff;
+    background-color: #191a1d;
+    border: 0;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 8px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    margin: 8px
+}
+
+#screen{
+    border: 0;
+    border-radius: 0.5rem;
+    height: 48px;
+    margin-bottom: 15px;
+    margin-left: 8px;
+    width: 240px;
+    background-color: rgba(54, 3, 3, 0.603);
+    color: rgb(0, 0, 0);
+    font-size: 1.5rem;
+    padding: 5px;
+    box-sizing: border-box;
+    box-shadow:  -0.25rem -0.25rem 0.5rem hsl(0deg 0% 100% / 7%), 
+    0.25rem 0.25rem 0.5rem rgb(255 255 255 / 12%), 
+    -0.75rem -0.75rem 1.75rem hsl(0deg 0% 100% / 7%), 
+    0.75rem 0.75rem 1.75rem rgb(255 255 255 / 12%), 
+    inset 8rem 8rem 8rem rgb(255 255 255 / 5%), 
+    inset -8rem -8rem 8rem hsl(0deg 0% 100% / 5%);
+}
+
+.row{
+    display: flex;
+}
+
+#zero{
+    width: 75px;
+}
+
+button:active:hover {
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.18),
+    inset -5px -5px 15px  rgba(0, 0, 0, 0.18);
+}
